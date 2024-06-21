@@ -19,33 +19,3 @@
 
  3. Agora é só utilizar a API no endereço `http://localhost:3000`
 
-## Autenticação
-### Registrar
-```
-http://localhost:3000/api/auth/signup
-```
-
-Body:
-```json
-{
-        "name": "nomeDeUsuario",
-        "email": "seuemail@gmail.com",
-        "password": "suasenha123"
-}
-```
-### Logar
-```
-http://localhost:3000/api/auth/signin
-```
-
-Body:
-```json
-{
-        "email": "seuemail@gmail.com",
-        "password": "suasenha123"
-}
-```
-
-Copiar o token retornado para dentro do header das próximas requisições.
-
-```Authorization: Bearer codigo_token```
